@@ -22,3 +22,9 @@ var blues =blues.fontcolor("blue");
 document.write(blues);
 
 document.write(4 + 4);
+
+function My_First_Function() {
+    var str = "This text is red!";
+    var result = str.fontcolor("red");
+    document.getElementById("Red_Text").innerHTML = result;
+}
