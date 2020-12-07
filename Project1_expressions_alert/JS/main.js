@@ -23,8 +23,8 @@ document.write(blues);
 
 document.write(4 + 4);
 
-function My_First_Function() {
-    var str = "This text is red!";
-    var result = str.fontcolor("red");
-    document.getElementById("Red_Text").innerHTML = result;
+function My_First_Function() {                        //Defining my function.
+    var str = "This text is red!";                   //Defining my variable, giving it a string value. The written text is what we want to display.
+    var result = str.fontcolor("red");              // Using the str method. We are assigning the color red to our sentence.
+    document.getElementById("Red_Text").innerHTML = result;   //gathering the value into our HTML element, using id="Red_Text" in html.
 }
