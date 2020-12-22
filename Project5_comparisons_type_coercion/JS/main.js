@@ -2,7 +2,7 @@
 
 document.write(typeof "Font");  // The word "Font" is a String.
 document.write("<br>");
-document.write(typeof 3);  //The Number "3" is a Number.
+document.write(typeof 3);  //The Number 3 is a Number no quotation marks on a number.
 document.write("<br>");
 document.write(2E310);   //Displaying "infinity" we write a high floating point number.
 document.write("<br>");
