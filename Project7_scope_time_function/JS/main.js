@@ -22,7 +22,7 @@ Add_numbers_3 ();
 Add_numbers_4 ();
 
 
-//console.log() method, if you open the console, you’ll see the error “X is not defined.”
+//console.log() method
 function Add_numbers_5() {
     var X = 10;
     console.log(15 + X);
