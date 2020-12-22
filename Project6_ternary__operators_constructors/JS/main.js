@@ -48,7 +48,7 @@ function myFunction1() {
     function Count () {
         var Starting_point = 9;
         function Plus_one() {Starting_point += 1;}
-        Plus_one();
+        Plus_one();            //the Plus_one() function was the nested function. The result would be "10"
         return Starting_point;
   }
 }
