@@ -1,18 +1,17 @@
 //A global variable would be written as follows:
+var Y = 10;
 function Add_numbers_1() {
-    var X = 10;
-    document.write(20 + X + "<br>");
+    document.write(20 + Y + "<br>");
 }
 function Add_numbers_2() {
-    document.write(X + 100);
+    document.write(Y + 100);
 }
 Add_numbers_1 () ;
 Add_numbers_2 () ;
 
-
 //LOCAL VARIABLE
 function Add_numbers_3() {
-    var X = 10;
+    var X = 11;
     document.write(20 + X + "<br>");
 }
 function Add_numbers_4() {
@@ -33,17 +32,18 @@ function Add_numbers_6() {
 Add_numbers_5() ;
 Add_numbers_6() ;
 
+
 //IF STATEMENTS
 function get_Date(){
-    if (new Date().getHours() < 18) {  //Date().getHours() method returns the hour in the specified date according to the local time, and the hours
+    if (new Date().getHours() < 18) {                     //Date().getHours() method returns the hour in the specified date according to the local time, and the hours
     document.getElementById("Greeting").innerHTML = "How are you today";
     }
 }
 
 // ELSE STATEMENTS
 function Age_Function() {
-    Age = document.getElementById("Age").valyue;
-    if (Age >= 18) {
+    Age = document.getElementById("Age").value;
+    if (Age > 18) {
         Vote = "You are old enough to vote!";
     }
     else {
