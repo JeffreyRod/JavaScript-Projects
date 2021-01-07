@@ -10,15 +10,15 @@ Add_numbers_1 () ;
 Add_numbers_2 () ;
 
 //LOCAL VARIABLE
-function Add_numbers_3() {
+function Add_function_3() {
     var X = 11;
     document.write(20 + X + "<br>");
 }
-function Add_numbers_4() {
+function Add_function_4() {
     document.write(X + 100);
     }
-Add_numbers_3 ();
-Add_numbers_4 ();
+Add_function_3 ();
+Add_function_4 ();
 
 
 //console.log() method
