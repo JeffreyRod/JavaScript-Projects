@@ -2,18 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Slide show.</title>
+    <link rel="stylesheet" href="./CSS/animation.css">
     <script src="JS/main.js"></script>
-    <link rel="stylesheet" type="text/css" href="CSS_File.css">
-    <link rel="stylesheet" href="./css/animations.css">
-    <title></title>
 </head>
-
 <body>
+<!-- slideshow contaienr -->
+<div class="slideshow-container">
 
-<P>How many seconds would you like to set your alarm for?</P>
-<input id="seconds" value="" />
-<button onclick="countdown()">Click here</button>
-<p id="timer"></p>
+  <!-- full-width images with number and caption text-->
+  <div class="mySlides fade">
+    <img src="./images/thumbnail_1.png" width="100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="./images/thumbnail_2.png" width="100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="./images/thumbnail_3.png" width="100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
 
 </body>
 </html>
