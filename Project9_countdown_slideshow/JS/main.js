@@ -27,6 +27,7 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
 }
 
+// countdown function
 function countdown() {
     var seconds = document.getElementById("seconds").value;
 
