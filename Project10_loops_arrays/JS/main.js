@@ -32,3 +32,11 @@ function Call_Loop() {
     var a = str.length;
     document.getElementById("Loop").innerHTML = a;
 }
+
+var X = 82;
+document.write(X);
+{
+    var X = 33;
+    document.write ("<br>" + X);
+}
+document.write("<br>" + X);
