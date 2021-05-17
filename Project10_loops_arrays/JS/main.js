@@ -74,9 +74,9 @@ document.getElementById("Demo").innerHTML = text;
 
 //while Loop
 function myFunction() {
-    var text = ""
+    var text = "";
     var i = 0;
-    while (i < 5) {
+    while (i < 7) {
         text += "<br>The number is " + i;
         i++;
     }
