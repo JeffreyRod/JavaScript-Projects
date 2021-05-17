@@ -60,7 +60,7 @@ let car = {
 document.getElementById("Car_object").innerHTML = car.description();
 }
 
-//while Loop
+//for Loop
 function test_Loop () {
     var cars = ["BMW", "Volvo", "Dodge", "Ford"];
     var i = 0;
@@ -70,4 +70,15 @@ function test_Loop () {
         i++;
     }
 document.getElementById("Demo").innerHTML = text;
+}
+
+//while Loop
+function myFunction() {
+    var text = ""
+    var i = 0;
+    while (i < 5) {
+        text += "<br>The number is " + i;
+        i++;
+    }
+    document.getElementById("test").innerHTML = text;
 }
