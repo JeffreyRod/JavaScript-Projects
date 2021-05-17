@@ -1,3 +1,4 @@
+//for Loop
 var Instruments = ["Guiter", "Drums", "Piano", "Bass", "Violin", "Trumpet", "Flute"];
 var Content = "";
 function for_Loop() {
@@ -6,6 +7,9 @@ function for_Loop() {
     }
     document.getElementById("List_of_Instruments").innerHTML = Content;
 }
+
+
+
 
 //Array 
 function array_Function() {
@@ -33,6 +37,7 @@ function Call_Loop() {
     document.getElementById("Loop").innerHTML = a;
 }
 
+// LET keyword declares variables
 var X = 82;
 document.write(X);
 {
@@ -40,3 +45,29 @@ document.write(X);
     document.write ("<br>" + X);
 }
 document.write("<br>" + X);
+
+//Storing diffrent types of data in a Object.
+function Call_object () {
+let car = {
+    make: "Dodge",
+    model: "Viper",
+    year: "2021",
+    color: "red",
+    description: function() {
+        return "The car is a " + this.year + this.color + this.make + this.model;
+    }
+};
+document.getElementById("Car_object").innerHTML = car.description();
+}
+
+//while Loop
+function test_Loop () {
+    var cars = ["BMW", "Volvo", "Dodge", "Ford"];
+    var i = 0;
+    var text = "";
+    for (;cars[i];) {
+        text += cars[i] + "<br>";
+        i++;
+    }
+document.getElementById("Demo").innerHTML = text;
+}
