@@ -25,3 +25,10 @@ function Color_Function() {
     document.getElementById("Output").innerHTML = Color_Output;
 }
 
+//GETELEMENTSBYCLASSNAME() METHOD
+function Hello_World_Function() {
+    var A = document.getElementsByClassName("Click");
+    A[0].innerHTML = "The text has chamged!";
+}
+
+
