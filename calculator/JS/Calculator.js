@@ -24,7 +24,7 @@ function Input_Digit(digit) {
         Calculator.Display_Value = Display_Value === '0' ? digit : Display_Value + digit;
     }
 }
-// this section handles decimal points
+// this section handles decimal points.
 function Input_Decimal(dot) {
     // this ensures that accidental clicking of the decimal point
     // doesn't cause bugs in your operation
