@@ -91,7 +91,7 @@ function Update_Display() {
 
 Update_Display() ;
 // This section monitors button clicks 
-const key = document.querySelector('.calculator-keys');
+const keys = document.querySelector('.calculator-keys');
 keys.addEventListener('click', (event) => {
     // the target variable is an clicked on is not a button, exit the function
     if (!target.matches('button')) {
