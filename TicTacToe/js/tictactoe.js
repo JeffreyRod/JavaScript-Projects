@@ -42,7 +42,7 @@ function placeXOrO(squareNumber) {
             //This function disables clicking for computer choice.
             disableClick();
             //This function waits 1 second before computer places  image and enables click.
-            setTimeout(function () { computerTurn () ; }, 1000)
+            setTimeout(function () { computersTurn() ; }, 1000)
         }
         //Returning true is needed for our computersTurn() function to work.
         return true;
@@ -84,7 +84,7 @@ function checkWinConditions() {
     // X 2, 5, 8 condition.
     else if (arrayIncludes('2X', '5X', '8X')) { drawWinLine(508, 50, 508, 558) }
     // X 6, 4, 2 condition.
-    else if (arrayIncludes('6', '4X', '2X')) { drawWinLine(100, 508, 510, 90) }
+    else if (arrayIncludes('6X', '4X', '2X')) { drawWinLine(100, 508, 510, 90) }
     // X 0, 4, 8 condition.
     else if (arrayIncludes('0X', '4X', '8X')) { drawWinLine(100, 100, 520, 520) }
     // O 0, 1, 2 condition.
@@ -213,7 +213,7 @@ disableClick();
 //This line plays the win sounds.
 audio('./media/winGame.mp3');
 //This line calls our main animation loop.
-animationLineDrawing();
+animateLineDrawing();
 //This line waits 1 second. Then, clears canvas, resets game, and allows clicking again.
 setTimeout(function () { clear(); resetGame(); }, 1000);
 }
