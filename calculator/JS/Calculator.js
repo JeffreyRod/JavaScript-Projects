@@ -11,7 +11,7 @@ const Calculator = {
 };
 
 // This modifies values each time a button is clicked
-function input_Digit(digit) {
+function Input_Digit(digit) {
     const { Display_Value, Wait_Second_Operand } = Calculator;
     // we are checking to see if Wait_Second_Operand is true and set
     // Display _Value to the key that was clicked.
@@ -36,7 +36,7 @@ function Input_Decimal(dot) {
     }
 }
 
-//This section handles operators
+//This section handles operators.
 function Handle_Operator(Next_Operator) {
     const { First_Operand, Display_Value, operator } = Calculator
     //when an operator key is pressed, we convert the current number 
@@ -93,7 +93,10 @@ Update_Display() ;
 // This section monitors button clicks 
 const keys = document.querySelector('.calculator-keys');
 keys.addEventListener('click', (event) => {
-    // the target variable is an clicked on is not a button, exit the function
+    // the target variable is an object that represents the element
+    // that was clicked
+    const { target } = event;
+    // if the element that was clicked on is not a button, exit the function
     if (!target.matches('button')) {
         return;
     }
