@@ -1,4 +1,4 @@
-function getRecipt() {
+function getReceipt() {
     // This initializes our string so it can get passed from
     // function to function , growing line by line into a full receipt
     var text1 = "<h3>You Ordered:</h3>";
