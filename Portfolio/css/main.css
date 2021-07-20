@@ -273,7 +273,7 @@ footer {
     font-family: Perpetua, Rockwell Extra Bold;
     letter-spacing: .1vw; /* This gives slight spacing between the letters */
     font-size: 1.5vw; /* Font size is relative to the size of the viewport width */
-    background-color: rgba(0, 0, 0, 0.75); /* Gives a slightly transparent black background */
+    background-color: rgba(0, 0, 0, 0.75); 
     font-weight: bold;
     border-radius: 0px 0px 7px 7px; /* Gives the text background rounded corners on the bottom left and right corners */
 }
